@@ -1,0 +1,23 @@
+.table-view {
+    -fx-background-color: transparent;
+}
+.table-row-cell:focused {
+    -fx-background-color:  #b8bebf;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-column {
+    -fx-alignment: center;
+    -fx-font-family: "HoloLens MDL2 Assets";
+    -fx-font-size: 25;
+}
+.button {
+    -fx-background-color: #1c7a94; /* Green */
+    -fx-border: none;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+.button:hover {
+    -fx-background-color: #d2d4d9;
+    -fx-text-fill: #015f91;
+}

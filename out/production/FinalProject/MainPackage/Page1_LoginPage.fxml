@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="543.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPackage.Page1_LoginPageController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="489.0" prefWidth="634.0" style="-fx-background-color: #020524;">
+         <children>
+            <ImageView fx:id="image" fitHeight="547.0" fitWidth="950.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <BoxBlur />
+               </effect>
+            </ImageView>
+            <Label layoutX="413.0" layoutY="112.0" prefHeight="63.0" prefWidth="171.0" text="Login">
+               <font>
+                  <Font name="Forte" size="62.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.3476190476190476" startY="0.22380952380952382">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9777617454528809" green="1.0" blue="0.4399999976158142" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.35648149251937866" green="0.5678240656852722" blue="0.5789473652839661" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <ColorAdjust brightness="0.12" contrast="0.74" hue="0.36" saturation="-0.12" />
+               </effect>
+            </Label>
+            <TextField fx:id="Username" cache="true" layoutX="468.0" layoutY="268.0" prefHeight="35.0" prefWidth="202.0" promptText="Club Name" style="-fx-background-radius: 16;">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="20.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="Password" layoutX="466.0" layoutY="334.0" prefHeight="35.0" prefWidth="202.0" promptText="Password" style="-fx-background-radius: 16;">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="20.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="282.0" layoutY="258.0" prefHeight="58.0" prefWidth="191.0" text="Club Name   " textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="284.0" layoutY="325.0" prefHeight="58.0" prefWidth="191.0" text="Password          " textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="28.0" />
+               </font>
+            </Label>
+            <Button fx:id="LoginButton" layoutX="586.0" layoutY="416.0" mnemonicParsing="false" onAction="#login" prefHeight="46.0" prefWidth="92.0" style="-fx-border-color: white; -fx-background-color: #1e66e3; -fx-border-radius: 16; -fx-border-width: 3; -fx-background-radius: 16; -fx-font-size: 20;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="ResetButton" layoutX="466.0" layoutY="416.0" mnemonicParsing="false" onAction="#Reset" prefHeight="46.0" prefWidth="92.0" style="-fx-border-color: white; -fx-background-color: #1e66e3; -fx-border-radius: 16; -fx-border-width: 3; -fx-background-radius: 16; -fx-font-size: 20;" text="Reset" textFill="WHITE">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Line endX="356.0" layoutX="313.0" layoutY="204.0" startX="-34.0" strokeWidth="3.0">
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.2947075664997101" green="0.3400000035762787" blue="0.03400000184774399" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.06030701845884323" green="0.7606725096702576" blue="0.8684210777282715" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke></Line>
+            <Label layoutX="303.0" layoutY="11.0" text="Database System">
+               <font>
+                  <Font name="Berlin Sans FB" size="54.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.08839999884366989" green="0.16101516783237457" blue="0.6800000071525574" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8552631735801697" green="0.7641934752464294" blue="0.7641934752464294" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill></Label>
+            <Label layoutX="30.0" layoutY="455.0" text="Football">
+               <font>
+                  <Font name="Berlin Sans FB" size="29.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="26.0" layoutY="488.0" text="Manager">
+               <font>
+                  <Font name="Berlin Sans FB" size="29.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button layoutX="817.0" layoutY="418.0" mnemonicParsing="false" onAction="#exit" prefHeight="50.0" prefWidth="92.0" style="-fx-border-color: white; -fx-background-color: #e3123f; -fx-border-radius: 16; -fx-border-width: 3; -fx-background-radius: 16; -fx-font-size: 20;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
